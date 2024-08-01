@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/font-awesome.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="outer-div">
+      <header>
+        <figure id="head-figure">
+          <img height="30" src="/logo.svg" alt="Logo" />
+          <figcaption>Epicode - Il blog dei developers</figcaption>
+        </figure>
+        <div>
+          <nav class="menu">
+            <a href="#">Menù</a>
+            <a href="#">Articoli</a>
+            <a href="#">Lavora con noi</a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <h1 id="head1">Come creare un template per i post</h1>
+        <h4 id="head4">di Mario Rossi - pubblicato il 25-10-2020</h4>
+        <caption>
+          La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine
+        </caption>
+        <div class="list-title01">Le varie aree saranno quindi suddivise in:</div>
+        <ul>
+          <li>Contenuti di intestazione del tag &lt;header&gt;</li>
+          <li>Contenuti centrali variabili del tag &lcy;main&gt; (corpo principale)</li>
+          <li>Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;</li>
+        </ul>
+        <p>Formattazione del codice</p>
+        <div class="list-title02">
+          Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:
+        </div>
+        <ol>
+          <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
+          <li>Scrivere l'HTML dei tag esterni a quellli interni e dall'alto verso il basso</li>
+          <li>Applicare gli stili CSS</li>
+        </ol>
+        <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressocché totale</p>
+        <table>
+          <caption>
+            Diffusione dei CSS
+          </caption>
+          <tr>
+            <th>Anno</th>
+            <th>% di utilizzo</th>
+            <th>Supporto Browsers</th>
+          </tr>
+          <tr>
+            <td>2000</td>
+            <td>20%</td>
+            <td>17%</td>
+          </tr>
+          <tr>
+            <td>2002</td>
+            <td>35%</td>
+            <td>22%</td>
+          </tr>
+          <tr>
+            <td>2004</td>
+            <td>45%</td>
+            <td>42%</td>
+          </tr>
+          <tr>
+            <td>2008</td>
+            <td>80%</td>
+            <td>51%</td>
+          </tr>
+          <tr>
+            <td>2012</td>
+            <td>100%</td>
+            <td>76%</td>
+          </tr>
+        </table>
+        <p id="table-end-p">
+          Un test di validazione potrà essere fatto tramit il tool online -LINK ESTERNO- dedicato allo scopo. Una volta ottimizzato il tutto, avremmo raggiunto
+          il nostro obiettivo ed essere stati dei veri developers come loro:
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/UvF0Zt4_NGU?si=6-AXN7PwVWraxU9T"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <br />
+        <p></p>
+        <form action="submit form" method="get">
+          <caption>
+            Vuoi rimanere aggironato su altre novità del blog? Iscriviti alla nostra newsletter:
+          </caption>
+          <div>
+            <label for="user-email">Inserisci l'Email</label>
+            <input type="email" name="user-email" placeholder="email" required />
+          </div>
+          <div>
+            <button type="submit">Iscriviti</button>
+          </div>
+        </form>
+        <div>
+          <p>Articoli Correlati</p>
+          <div class="div-article">
+            <a href="#">
+              <div class="article">Validare il codice HTML</div>
+              <div class="article">Categoria: develop</div>
+              <div class="article">Data: 18-9-2020</div>
+            </a>
+          </div>
+          <div class="div-article">
+            <a href="#">
+              <div class="article">Correggere la sintassi</div>
+              <div class="article">Categoria: dvelop</div>
+              <div class="article">Data: 16-9-2020</div>
+            </a>
+          </div>
+          <div class="div-article">
+            <a href="#">
+              <div class="article">Meno Kb nella pagina</div>
+              <div class="article">Categoria: ottimizzazione</div>
+              <div class="article">Data: 30-9-2020</div>
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>Blog Epicode &reg;2023</p>
+        <p>Testata online di Mario Rpssi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.</p>
+        <caption>
+          info@epicode.school
+          <a href="#">-LINK EMAIL-</a>
+        </caption>
+      </footer>
+    </div>
+  </body>
+</html>
